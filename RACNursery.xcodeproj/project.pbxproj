@@ -125,6 +125,7 @@
 				556C961517ECB77C001262B2 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		556C961517ECB77C001262B2 /* Products */ = {
 			isa = PBXGroup;
