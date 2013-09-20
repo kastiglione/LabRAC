@@ -15,7 +15,10 @@
 		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
 		556C966517ECBC0E001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
 		556C966917ECBD1C001262B2 /* RACNursery.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* RACNursery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C966C17ECBD54001262B2 /* RACSignal+KASExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C966D17ECBD54001262B2 /* RACSignal+KASExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */; };
 		556C96AF17ECC78E001262B2 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96AE17ECC78E001262B2 /* libSpecta.a */; };
+		556C96B217ECC971001262B2 /* RACSignalKASExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */; };
 		556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96B617ECCB6B001262B2 /* libExpecta.a */; };
 		556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +97,8 @@
 		556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNurseryTests-Info.plist"; sourceTree = "<group>"; };
 		556C963717ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
+		556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+KASExtensions.h"; sourceTree = "<group>"; };
+		556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+KASExtensions.m"; sourceTree = "<group>"; };
 		556C969217ECC2CF001262B2 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		556C969417ECC2CF001262B2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		556C969517ECC2CF001262B2 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		556C96A417ECC2CF001262B2 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		556C96A517ECC2CF001262B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		556C96AE17ECC78E001262B2 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = ../External/ReactiveCocoa/external/specta/build/Release/libSpecta.a; sourceTree = "<group>"; };
+		556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalKASExtensionsSpec.m; sourceTree = "<group>"; };
 		556C96B617ECCB6B001262B2 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/ReactiveCocoa/external/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				556C962417ECB77C001262B2 /* RACNursery.h */,
+				556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */,
+				556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */,
 				556C961E17ECB77C001262B2 /* Supporting Files */,
 			);
 			path = RACNursery;
@@ -204,6 +212,7 @@
 		556C963317ECB77C001262B2 /* RACNurseryTests */ = {
 			isa = PBXGroup;
 			children = (
+				556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */,
 				556C963417ECB77C001262B2 /* Supporting Files */,
 			);
 			path = RACNurseryTests;
@@ -305,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556C966917ECBD1C001262B2 /* RACNursery.h in Headers */,
+				556C966C17ECBD54001262B2 /* RACSignal+KASExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C966D17ECBD54001262B2 /* RACSignal+KASExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C96B217ECC971001262B2 /* RACSignalKASExtensionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
