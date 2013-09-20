@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		556C961817ECB77C001262B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961717ECB77C001262B2 /* Cocoa.framework */; };
+		556C962217ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C962017ECB77C001262B2 /* InfoPlist.strings */; };
+		556C962617ECB77C001262B2 /* RACNursery.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C962517ECB77C001262B2 /* RACNursery.m */; };
+		556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C962D17ECB77C001262B2 /* SenTestingKit.framework */; };
+		556C962F17ECB77C001262B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961717ECB77C001262B2 /* Cocoa.framework */; };
+		556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961417ECB77C001262B2 /* RACNursery.framework */; };
+		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
+		556C963B17ECB77C001262B2 /* RACNurseryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C963A17ECB77C001262B2 /* RACNurseryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		556C963017ECB77C001262B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556C960B17ECB77C001262B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556C961317ECB77C001262B2;
+			remoteInfo = RACNursery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		556C961417ECB77C001262B2 /* RACNursery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RACNursery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C961717ECB77C001262B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		556C961A17ECB77C001262B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		556C961B17ECB77C001262B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		556C961C17ECB77C001262B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		556C961F17ECB77C001262B2 /* RACNursery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNursery-Info.plist"; sourceTree = "<group>"; };
+		556C962117ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		556C962317ECB77C001262B2 /* RACNursery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACNursery-Prefix.pch"; sourceTree = "<group>"; };
+		556C962417ECB77C001262B2 /* RACNursery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACNursery.h; sourceTree = "<group>"; };
+		556C962517ECB77C001262B2 /* RACNursery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACNursery.m; sourceTree = "<group>"; };
+		556C962C17ECB77C001262B2 /* RACNurseryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACNurseryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C962D17ECB77C001262B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNurseryTests-Info.plist"; sourceTree = "<group>"; };
+		556C963717ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		556C963917ECB77C001262B2 /* RACNurseryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACNurseryTests.h; sourceTree = "<group>"; };
+		556C963A17ECB77C001262B2 /* RACNurseryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACNurseryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		556C961017ECB77C001262B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C961817ECB77C001262B2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C962817ECB77C001262B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */,
+				556C962F17ECB77C001262B2 /* Cocoa.framework in Frameworks */,
+				556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556C960A17ECB77C001262B2 = {
+			isa = PBXGroup;
+			children = (
+				556C961D17ECB77C001262B2 /* RACNursery */,
+				556C963317ECB77C001262B2 /* RACNurseryTests */,
+				556C961617ECB77C001262B2 /* Frameworks */,
+				556C961517ECB77C001262B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		556C961517ECB77C001262B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556C961417ECB77C001262B2 /* RACNursery.framework */,
+				556C962C17ECB77C001262B2 /* RACNurseryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556C961617ECB77C001262B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556C961717ECB77C001262B2 /* Cocoa.framework */,
+				556C962D17ECB77C001262B2 /* SenTestingKit.framework */,
+				556C961917ECB77C001262B2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		556C961917ECB77C001262B2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556C961A17ECB77C001262B2 /* AppKit.framework */,
+				556C961B17ECB77C001262B2 /* CoreData.framework */,
+				556C961C17ECB77C001262B2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		556C961D17ECB77C001262B2 /* RACNursery */ = {
+			isa = PBXGroup;
+			children = (
+				556C962417ECB77C001262B2 /* RACNursery.h */,
+				556C962517ECB77C001262B2 /* RACNursery.m */,
+				556C961E17ECB77C001262B2 /* Supporting Files */,
+			);
+			path = RACNursery;
+			sourceTree = "<group>";
+		};
+		556C961E17ECB77C001262B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556C961F17ECB77C001262B2 /* RACNursery-Info.plist */,
+				556C962017ECB77C001262B2 /* InfoPlist.strings */,
+				556C962317ECB77C001262B2 /* RACNursery-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		556C963317ECB77C001262B2 /* RACNurseryTests */ = {
+			isa = PBXGroup;
+			children = (
+				556C963917ECB77C001262B2 /* RACNurseryTests.h */,
+				556C963A17ECB77C001262B2 /* RACNurseryTests.m */,
+				556C963417ECB77C001262B2 /* Supporting Files */,
+			);
+			path = RACNurseryTests;
+			sourceTree = "<group>";
+		};
+		556C963417ECB77C001262B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */,
+				556C963617ECB77C001262B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		556C961117ECB77C001262B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		556C961317ECB77C001262B2 /* RACNursery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery" */;
+			buildPhases = (
+				556C960F17ECB77C001262B2 /* Sources */,
+				556C961017ECB77C001262B2 /* Frameworks */,
+				556C961117ECB77C001262B2 /* Headers */,
+				556C961217ECB77C001262B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RACNursery;
+			productName = RACNursery;
+			productReference = 556C961417ECB77C001262B2 /* RACNursery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		556C962B17ECB77C001262B2 /* RACNurseryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNurseryTests" */;
+			buildPhases = (
+				556C962717ECB77C001262B2 /* Sources */,
+				556C962817ECB77C001262B2 /* Frameworks */,
+				556C962917ECB77C001262B2 /* Resources */,
+				556C962A17ECB77C001262B2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556C963117ECB77C001262B2 /* PBXTargetDependency */,
+			);
+			name = RACNurseryTests;
+			productName = RACNurseryTests;
+			productReference = 556C962C17ECB77C001262B2 /* RACNurseryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		556C960B17ECB77C001262B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dave Lee";
+			};
+			buildConfigurationList = 556C960E17ECB77C001262B2 /* Build configuration list for PBXProject "RACNursery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 556C960A17ECB77C001262B2;
+			productRefGroup = 556C961517ECB77C001262B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				556C961317ECB77C001262B2 /* RACNursery */,
+				556C962B17ECB77C001262B2 /* RACNurseryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		556C961217ECB77C001262B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C962217ECB77C001262B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C962917ECB77C001262B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		556C962A17ECB77C001262B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		556C960F17ECB77C001262B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C962617ECB77C001262B2 /* RACNursery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C962717ECB77C001262B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C963B17ECB77C001262B2 /* RACNurseryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		556C963117ECB77C001262B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556C961317ECB77C001262B2 /* RACNursery */;
+			targetProxy = 556C963017ECB77C001262B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		556C962017ECB77C001262B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556C962117ECB77C001262B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		556C963617ECB77C001262B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556C963717ECB77C001262B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		556C963C17ECB77C001262B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		556C963D17ECB77C001262B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		556C963F17ECB77C001262B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		556C964017ECB77C001262B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		556C964217ECB77C001262B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		556C964317ECB77C001262B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556C960E17ECB77C001262B2 /* Build configuration list for PBXProject "RACNursery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C963C17ECB77C001262B2 /* Debug */,
+				556C963D17ECB77C001262B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C963F17ECB77C001262B2 /* Debug */,
+				556C964017ECB77C001262B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNurseryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C964217ECB77C001262B2 /* Debug */,
+				556C964317ECB77C001262B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556C960B17ECB77C001262B2 /* Project object */;
+}
