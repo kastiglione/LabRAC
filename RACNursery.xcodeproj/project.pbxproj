@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		556C961817ECB77C001262B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961717ECB77C001262B2 /* Cocoa.framework */; };
 		556C962217ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C962017ECB77C001262B2 /* InfoPlist.strings */; };
-		556C962617ECB77C001262B2 /* RACNursery.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C962517ECB77C001262B2 /* RACNursery.m */; };
 		556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C962D17ECB77C001262B2 /* SenTestingKit.framework */; };
 		556C962F17ECB77C001262B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961717ECB77C001262B2 /* Cocoa.framework */; };
 		556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961417ECB77C001262B2 /* RACNursery.framework */; };
 		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
-		556C963B17ECB77C001262B2 /* RACNurseryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C963A17ECB77C001262B2 /* RACNurseryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +35,10 @@
 		556C962117ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556C962317ECB77C001262B2 /* RACNursery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACNursery-Prefix.pch"; sourceTree = "<group>"; };
 		556C962417ECB77C001262B2 /* RACNursery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACNursery.h; sourceTree = "<group>"; };
-		556C962517ECB77C001262B2 /* RACNursery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACNursery.m; sourceTree = "<group>"; };
 		556C962C17ECB77C001262B2 /* RACNurseryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACNurseryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C962D17ECB77C001262B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNurseryTests-Info.plist"; sourceTree = "<group>"; };
 		556C963717ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		556C963917ECB77C001262B2 /* RACNurseryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACNurseryTests.h; sourceTree = "<group>"; };
-		556C963A17ECB77C001262B2 /* RACNurseryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACNurseryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				556C962417ECB77C001262B2 /* RACNursery.h */,
-				556C962517ECB77C001262B2 /* RACNursery.m */,
 				556C961E17ECB77C001262B2 /* Supporting Files */,
 			);
 			path = RACNursery;
@@ -130,8 +124,6 @@
 		556C963317ECB77C001262B2 /* RACNurseryTests */ = {
 			isa = PBXGroup;
 			children = (
-				556C963917ECB77C001262B2 /* RACNurseryTests.h */,
-				556C963A17ECB77C001262B2 /* RACNurseryTests.m */,
 				556C963417ECB77C001262B2 /* Supporting Files */,
 			);
 			path = RACNurseryTests;
@@ -263,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C962617ECB77C001262B2 /* RACNursery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C963B17ECB77C001262B2 /* RACNurseryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
