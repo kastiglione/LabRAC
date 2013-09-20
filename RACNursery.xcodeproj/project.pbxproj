@@ -321,9 +321,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		556C961317ECB77C001262B2 /* RACNursery */ = {
+		556C961317ECB77C001262B2 /* RACNursery Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery" */;
+			buildConfigurationList = 556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac" */;
 			buildPhases = (
 				556C960F17ECB77C001262B2 /* Sources */,
 				556C961017ECB77C001262B2 /* Frameworks */,
@@ -335,14 +335,14 @@
 			dependencies = (
 				556C966817ECBCB0001262B2 /* PBXTargetDependency */,
 			);
-			name = RACNursery;
+			name = "RACNursery Mac";
 			productName = RACNursery;
 			productReference = 556C961417ECB77C001262B2 /* RACNursery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		556C962B17ECB77C001262B2 /* RACNurseryTests */ = {
+		556C962B17ECB77C001262B2 /* RACNursery Mac Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNurseryTests" */;
+			buildConfigurationList = 556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac Tests" */;
 			buildPhases = (
 				556C962717ECB77C001262B2 /* Sources */,
 				556C962817ECB77C001262B2 /* Frameworks */,
@@ -354,7 +354,7 @@
 			dependencies = (
 				556C963117ECB77C001262B2 /* PBXTargetDependency */,
 			);
-			name = RACNurseryTests;
+			name = "RACNursery Mac Tests";
 			productName = RACNurseryTests;
 			productReference = 556C962C17ECB77C001262B2 /* RACNurseryTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -386,8 +386,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				556C961317ECB77C001262B2 /* RACNursery */,
-				556C962B17ECB77C001262B2 /* RACNurseryTests */,
+				556C961317ECB77C001262B2 /* RACNursery Mac */,
+				556C962B17ECB77C001262B2 /* RACNursery Mac Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -494,7 +494,7 @@
 /* Begin PBXTargetDependency section */
 		556C963117ECB77C001262B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 556C961317ECB77C001262B2 /* RACNursery */;
+			target = 556C961317ECB77C001262B2 /* RACNursery Mac */;
 			targetProxy = 556C963017ECB77C001262B2 /* PBXContainerItemProxy */;
 		};
 		556C966817ECBCB0001262B2 /* PBXTargetDependency */ = {
@@ -807,7 +807,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery" */ = {
+		556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C963F17ECB77C001262B2 /* Debug */,
@@ -818,7 +818,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNurseryTests" */ = {
+		556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C964217ECB77C001262B2 /* Debug */,
