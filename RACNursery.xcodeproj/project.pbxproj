@@ -123,7 +123,7 @@
 		556C962117ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556C962317ECB77C001262B2 /* RACNursery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACNursery-Prefix.pch"; sourceTree = "<group>"; };
 		556C962417ECB77C001262B2 /* RACNursery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACNursery.h; sourceTree = "<group>"; };
-		556C962C17ECB77C001262B2 /* RACNurseryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACNurseryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C962C17ECB77C001262B2 /* RACNurseryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RACNurseryTests.octest; path = "RACNursery Mac Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C962D17ECB77C001262B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNurseryTests-Info.plist"; sourceTree = "<group>"; };
 		556C963717ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1122,6 +1122,7 @@
 				556C970117ECDD42001262B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1132,6 +1133,7 @@
 				556C970617ECDD42001262B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
