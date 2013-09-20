@@ -91,6 +91,22 @@
 		556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNurseryTests-Info.plist"; sourceTree = "<group>"; };
 		556C963717ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
+		556C969217ECC2CF001262B2 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		556C969417ECC2CF001262B2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		556C969517ECC2CF001262B2 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		556C969617ECC2CF001262B2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		556C969717ECC2CF001262B2 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		556C969917ECC2CF001262B2 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		556C969A17ECC2CF001262B2 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		556C969C17ECC2CF001262B2 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		556C969D17ECC2CF001262B2 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		556C96A017ECC2CF001262B2 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		556C96A117ECC2CF001262B2 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		556C96A217ECC2CF001262B2 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		556C96A317ECC2CF001262B2 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		556C96A417ECC2CF001262B2 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		556C96A517ECC2CF001262B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +138,7 @@
 				556C961D17ECB77C001262B2 /* RACNursery */,
 				556C963317ECB77C001262B2 /* RACNurseryTests */,
 				556C961617ECB77C001262B2 /* Frameworks */,
+				556C969017ECC2CF001262B2 /* Configuration */,
 				556C961517ECB77C001262B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -204,6 +221,70 @@
 				556C966417ECBBED001262B2 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		556C969017ECC2CF001262B2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				556C969117ECC2CF001262B2 /* Base */,
+				556C969B17ECC2CF001262B2 /* iOS */,
+				556C969F17ECC2CF001262B2 /* Mac OS X */,
+				556C96A517ECC2CF001262B2 /* README.md */,
+			);
+			name = Configuration;
+			path = External/ReactiveCocoa/external/xcconfigs;
+			sourceTree = "<group>";
+		};
+		556C969117ECC2CF001262B2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				556C969217ECC2CF001262B2 /* Common.xcconfig */,
+				556C969317ECC2CF001262B2 /* Configurations */,
+				556C969817ECC2CF001262B2 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		556C969317ECC2CF001262B2 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				556C969417ECC2CF001262B2 /* Debug.xcconfig */,
+				556C969517ECC2CF001262B2 /* Profile.xcconfig */,
+				556C969617ECC2CF001262B2 /* Release.xcconfig */,
+				556C969717ECC2CF001262B2 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		556C969817ECC2CF001262B2 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				556C969917ECC2CF001262B2 /* Application.xcconfig */,
+				556C969A17ECC2CF001262B2 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		556C969B17ECC2CF001262B2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				556C969C17ECC2CF001262B2 /* iOS-Application.xcconfig */,
+				556C969D17ECC2CF001262B2 /* iOS-Base.xcconfig */,
+				556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		556C969F17ECC2CF001262B2 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				556C96A017ECC2CF001262B2 /* Mac-Application.xcconfig */,
+				556C96A117ECC2CF001262B2 /* Mac-Base.xcconfig */,
+				556C96A217ECC2CF001262B2 /* Mac-DynamicLibrary.xcconfig */,
+				556C96A317ECC2CF001262B2 /* Mac-Framework.xcconfig */,
+				556C96A417ECC2CF001262B2 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
