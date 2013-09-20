@@ -139,6 +139,7 @@
 		556C961617ECB77C001262B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */,
 				556C961717ECB77C001262B2 /* Cocoa.framework */,
 				556C962D17ECB77C001262B2 /* SenTestingKit.framework */,
 				556C961917ECB77C001262B2 /* Other Frameworks */,
@@ -186,7 +187,6 @@
 		556C963417ECB77C001262B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */,
 				556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */,
 				556C963617ECB77C001262B2 /* InfoPlist.strings */,
 			);
