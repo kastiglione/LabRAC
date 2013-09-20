@@ -15,6 +15,9 @@
 		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
 		556C966517ECBC0E001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
 		556C966917ECBD1C001262B2 /* RACNursery.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* RACNursery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C96AF17ECC78E001262B2 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96AE17ECC78E001262B2 /* libSpecta.a */; };
+		556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96B617ECCB6B001262B2 /* libExpecta.a */; };
+		556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,8 @@
 		556C96A317ECC2CF001262B2 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		556C96A417ECC2CF001262B2 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		556C96A517ECC2CF001262B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		556C96AE17ECC78E001262B2 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = ../External/ReactiveCocoa/external/specta/build/Release/libSpecta.a; sourceTree = "<group>"; };
+		556C96B617ECCB6B001262B2 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/ReactiveCocoa/external/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */,
+				556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */,
+				556C96AF17ECC78E001262B2 /* libSpecta.a in Frameworks */,
 				556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */,
 				556C962F17ECB77C001262B2 /* Cocoa.framework in Frameworks */,
 				556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */,
@@ -204,6 +212,8 @@
 		556C963417ECB77C001262B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				556C96B617ECCB6B001262B2 /* libExpecta.a */,
+				556C96AE17ECC78E001262B2 /* libSpecta.a */,
 				556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */,
 				556C963617ECB77C001262B2 /* InfoPlist.strings */,
 			);
@@ -603,7 +613,12 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
 				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -617,7 +632,12 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
 				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -681,7 +701,12 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
 				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -745,7 +770,12 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
 				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
