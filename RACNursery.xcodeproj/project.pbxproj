@@ -21,6 +21,18 @@
 		556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
 		556C96C617ECD89C001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961C17ECB77C001262B2 /* Foundation.framework */; };
 		556C96C717ECD8B3001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961C17ECB77C001262B2 /* Foundation.framework */; };
+		556C96DF17ECDD41001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96DE17ECDD41001262B2 /* Foundation.framework */; };
+		556C96ED17ECDD41001262B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C962D17ECB77C001262B2 /* SenTestingKit.framework */; };
+		556C96EF17ECDD42001262B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96EE17ECDD41001262B2 /* UIKit.framework */; };
+		556C96F017ECDD42001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96DE17ECDD41001262B2 /* Foundation.framework */; };
+		556C96F317ECDD42001262B2 /* libRACNursery-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */; };
+		556C970717ECE08F001262B2 /* RACSignal+KASExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */; };
+		556C970917ECE110001262B2 /* RACSignal+KASExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C970A17ECE115001262B2 /* RACNursery.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* RACNursery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C970B17ECE135001262B2 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965C17ECBBED001262B2 /* libReactiveCocoa-iOS.a */; };
+		556C970D17ECE206001262B2 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970C17ECE206001262B2 /* libSpecta-iOS.a */; };
+		556C970F17ECE20D001262B2 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970E17ECE20D001262B2 /* libExpecta-iOS.a */; };
+		556C971017ECE221001262B2 /* RACSignalKASExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +92,26 @@
 			remoteGlobalIDString = 88037F8215056328001A5B19;
 			remoteInfo = ReactiveCocoa;
 		};
+		556C96F117ECDD42001262B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556C960B17ECB77C001262B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556C96DC17ECDD41001262B2;
+			remoteInfo = "RACNursery iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		556C96DB17ECDD41001262B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		556C961417ECB77C001262B2 /* RACNursery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RACNursery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +149,12 @@
 		556C96AE17ECC78E001262B2 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = ../External/ReactiveCocoa/external/specta/build/Release/libSpecta.a; sourceTree = "<group>"; };
 		556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalKASExtensionsSpec.m; sourceTree = "<group>"; };
 		556C96B617ECCB6B001262B2 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/ReactiveCocoa/external/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
+		556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRACNursery-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C96DE17ECDD41001262B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		556C96EC17ECDD41001262B2 /* RACNursery iOS Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RACNursery iOS Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C96EE17ECDD41001262B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		556C970C17ECE206001262B2 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "../External/ReactiveCocoa/external/specta/build/Release-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
+		556C970E17ECE20D001262B2 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "../External/ReactiveCocoa/external/expecta/build/Release-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +180,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		556C96DA17ECDD41001262B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C970B17ECE135001262B2 /* libReactiveCocoa-iOS.a in Frameworks */,
+				556C96DF17ECDD41001262B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C96E817ECDD41001262B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C970F17ECE20D001262B2 /* libExpecta-iOS.a in Frameworks */,
+				556C970D17ECE206001262B2 /* libSpecta-iOS.a in Frameworks */,
+				556C96ED17ECDD41001262B2 /* SenTestingKit.framework in Frameworks */,
+				556C96EF17ECDD42001262B2 /* UIKit.framework in Frameworks */,
+				556C96F017ECDD42001262B2 /* Foundation.framework in Frameworks */,
+				556C96F317ECDD42001262B2 /* libRACNursery-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -163,6 +222,8 @@
 			children = (
 				556C961417ECB77C001262B2 /* RACNursery.framework */,
 				556C962C17ECB77C001262B2 /* RACNurseryTests.octest */,
+				556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */,
+				556C96EC17ECDD41001262B2 /* RACNursery iOS Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +234,8 @@
 				556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */,
 				556C961717ECB77C001262B2 /* Cocoa.framework */,
 				556C962D17ECB77C001262B2 /* SenTestingKit.framework */,
+				556C96DE17ECDD41001262B2 /* Foundation.framework */,
+				556C96EE17ECDD41001262B2 /* UIKit.framework */,
 				556C961917ECB77C001262B2 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -223,6 +286,8 @@
 			children = (
 				556C96B617ECCB6B001262B2 /* libExpecta.a */,
 				556C96AE17ECC78E001262B2 /* libSpecta.a */,
+				556C970E17ECE20D001262B2 /* libExpecta-iOS.a */,
+				556C970C17ECE206001262B2 /* libSpecta-iOS.a */,
 				556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */,
 				556C963617ECB77C001262B2 /* InfoPlist.strings */,
 			);
@@ -318,6 +383,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		556C970817ECE10A001262B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C970917ECE110001262B2 /* RACSignal+KASExtensions.h in Headers */,
+				556C970A17ECE115001262B2 /* RACNursery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +433,43 @@
 			productReference = 556C962C17ECB77C001262B2 /* RACNurseryTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		556C96DC17ECDD41001262B2 /* RACNursery iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C96FD17ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS" */;
+			buildPhases = (
+				556C96D917ECDD41001262B2 /* Sources */,
+				556C96DA17ECDD41001262B2 /* Frameworks */,
+				556C96DB17ECDD41001262B2 /* CopyFiles */,
+				556C970817ECE10A001262B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RACNursery iOS";
+			productName = "RACNursery iOS";
+			productReference = 556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		556C96EB17ECDD41001262B2 /* RACNursery iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS Tests" */;
+			buildPhases = (
+				556C96E717ECDD41001262B2 /* Sources */,
+				556C96E817ECDD41001262B2 /* Frameworks */,
+				556C96E917ECDD41001262B2 /* Resources */,
+				556C96EA17ECDD41001262B2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556C96F217ECDD42001262B2 /* PBXTargetDependency */,
+			);
+			name = "RACNursery iOS Tests";
+			productName = "RACNursery iOSTests";
+			productReference = 556C96EC17ECDD41001262B2 /* RACNursery iOS Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -388,6 +499,8 @@
 			targets = (
 				556C961317ECB77C001262B2 /* RACNursery Mac */,
 				556C962B17ECB77C001262B2 /* RACNursery Mac Tests */,
+				556C96DC17ECDD41001262B2 /* RACNursery iOS */,
+				556C96EB17ECDD41001262B2 /* RACNursery iOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -454,10 +567,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		556C96E917ECDD41001262B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		556C962A17ECB77C001262B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		556C96EA17ECDD41001262B2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,6 +622,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		556C96D917ECDD41001262B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C970717ECE08F001262B2 /* RACSignal+KASExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556C96E717ECDD41001262B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556C971017ECE221001262B2 /* RACSignalKASExtensionsSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -501,6 +650,11 @@
 			isa = PBXTargetDependency;
 			name = ReactiveCocoa;
 			targetProxy = 556C966717ECBCB0001262B2 /* PBXContainerItemProxy */;
+		};
+		556C96F217ECDD42001262B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556C96DC17ECDD41001262B2 /* RACNursery iOS */;
+			targetProxy = 556C96F117ECDD42001262B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -543,6 +697,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -552,6 +707,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -576,10 +732,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -593,10 +751,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -609,10 +765,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -623,8 +777,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
@@ -642,8 +794,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
@@ -674,6 +824,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -683,6 +834,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -697,10 +849,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Test;
@@ -711,8 +861,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
@@ -743,6 +891,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -752,6 +901,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -766,10 +916,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Profile;
@@ -780,8 +928,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
@@ -792,6 +938,144 @@
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Profile;
+		};
+		556C96FE17ECDD42001262B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/RACNursery_iOS.dst;
+				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		556C96FF17ECDD42001262B2 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/RACNursery_iOS.dst;
+				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Test;
+		};
+		556C970017ECDD42001262B2 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/RACNursery_iOS.dst;
+				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		556C970117ECDD42001262B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/RACNursery_iOS.dst;
+				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		556C970317ECDD42001262B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969C17ECC2CF001262B2 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
+				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		556C970417ECDD42001262B2 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969C17ECC2CF001262B2 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
+				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Test;
+		};
+		556C970517ECDD42001262B2 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969C17ECC2CF001262B2 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
+				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Profile;
+		};
+		556C970617ECDD42001262B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C969C17ECC2CF001262B2 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
+					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
+				);
+				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -828,6 +1112,26 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		556C96FD17ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C96FE17ECDD42001262B2 /* Debug */,
+				556C96FF17ECDD42001262B2 /* Test */,
+				556C970017ECDD42001262B2 /* Profile */,
+				556C970117ECDD42001262B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C970317ECDD42001262B2 /* Debug */,
+				556C970417ECDD42001262B2 /* Test */,
+				556C970517ECDD42001262B2 /* Profile */,
+				556C970617ECDD42001262B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
