@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		556C961817ECB77C001262B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961717ECB77C001262B2 /* Cocoa.framework */; };
 		556C962217ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C962017ECB77C001262B2 /* InfoPlist.strings */; };
 		556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C962D17ECB77C001262B2 /* SenTestingKit.framework */; };
-		556C962F17ECB77C001262B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961717ECB77C001262B2 /* Cocoa.framework */; };
 		556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961417ECB77C001262B2 /* RACNursery.framework */; };
 		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
 		556C966517ECBC0E001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
@@ -21,6 +19,8 @@
 		556C96B217ECC971001262B2 /* RACSignalKASExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */; };
 		556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96B617ECCB6B001262B2 /* libExpecta.a */; };
 		556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
+		556C96C617ECD89C001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961C17ECB77C001262B2 /* Foundation.framework */; };
+		556C96C717ECD8B3001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961C17ECB77C001262B2 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,8 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C96C617ECD89C001262B2 /* Foundation.framework in Frameworks */,
 				556C966517ECBC0E001262B2 /* ReactiveCocoa.framework in Frameworks */,
-				556C961817ECB77C001262B2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,11 +134,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C96C717ECD8B3001262B2 /* Foundation.framework in Frameworks */,
 				556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */,
 				556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */,
 				556C96AF17ECC78E001262B2 /* libSpecta.a in Frameworks */,
 				556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */,
-				556C962F17ECB77C001262B2 /* Cocoa.framework in Frameworks */,
 				556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
