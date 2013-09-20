@@ -14,6 +14,7 @@
 		556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961417ECB77C001262B2 /* RACNursery.framework */; };
 		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
 		556C966517ECBC0E001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
+		556C966917ECBD1C001262B2 /* RACNursery.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* RACNursery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +212,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556C966917ECBD1C001262B2 /* RACNursery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
