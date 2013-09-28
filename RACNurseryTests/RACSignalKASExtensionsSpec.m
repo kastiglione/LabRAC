@@ -69,4 +69,35 @@ describe(@"-kas_replayLastWhen:", ^{
 
 });
 
+describe(@"-kas_combineLatest:", ^{
+	__block RACSubject *subject;
+	__block RACSignal *combined;
+
+	beforeEach(^{
+		subject = [RACSubject subject];
+		combined = [subject kas_combineLatest];
+	});
+
+	it(@"should combine latest from incoming signals", ^{
+		__block RACTuple *latest;
+		[combined subscribeNext:^(RACTuple *tuple) {
+			latest = tuple;
+		}];
+		expect(latest).to.equal(nil);
+
+		RACSubject *first = [RACSubject subject];
+		[subject sendNext:first];
+		expect(latest).to.equal(nil);
+
+		[first sendNext:@1];
+		expect(latest).to.equal(RACTuplePack(@1));
+
+		[first sendNext:@2];
+		expect(latest).to.equal(RACTuplePack(@2));
+
+		[subject sendNext:[RACSignal return:@3]];
+		expect(latest).to.equal(RACTuplePack(@2, @3));
+	});
+});
+
 SpecEnd

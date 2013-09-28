@@ -31,4 +31,18 @@
 		setNameWithFormat:@"[%@] -kas_replayLastWhen: %@", self.name, cue.name];
 }
 
+- (RACSignal *)kas_combineLatest {
+	return [[[self
+		scanWithStart:[RACSignal return:[RACTuple new]] reduce:^(RACSignal *running, RACSignal *next) {
+			return [[[running
+				combineLatestWith:next]
+				reduceEach:^(RACTuple *combined, id value) {
+					return [combined tupleByAddingObject:value];
+				}]
+				replayLast];
+		}]
+		switchToLatest]
+		setNameWithFormat:@"%@ -kas_combineLatest", self.name];
+}
+
 @end

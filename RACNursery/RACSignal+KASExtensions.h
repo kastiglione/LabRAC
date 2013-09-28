@@ -19,4 +19,19 @@
 /// Returns a signal that completes when the receiver completes.
 - (RACSignal *)kas_replayLastWhen:(RACSignal *)cue;
 
+/// Combines the latest values from signals sent by the receiver into RACTuples,
+/// once signals have sent at least one `next`.
+///
+/// For each signal sent by the receiver, the output tuples corresondingly grow
+/// by one value.
+///
+/// For each signal, additional `next`s will result in a new RACTuple with the
+/// latest values from the current list of signals.
+///
+/// See also +combineLatest:
+///
+/// Returns a signal which sends RACTuples of the combined values, forwards any
+/// `error` events, and completes when sent signals complete.
+- (RACSignal *)kas_combineLatest;
+
 @end
