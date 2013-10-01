@@ -1,4 +1,4 @@
-RACNursery
+LabRAC
 ==========
 
 Experimental ReactiveCocoa extensions.

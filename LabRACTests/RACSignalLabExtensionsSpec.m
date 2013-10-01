@@ -1,21 +1,21 @@
 //
-//  RACSignalKASExtensionsSpec.m
-//  RACNursery
+//  RACSignalLabExtensionsSpec.m
+//  LabRAC
 //
 //  Created by Dave Lee on 2013-09-20.
 //  Copyright (c) 2013 Dave Lee. All rights reserved.
 //
 
-#import "RACSignal+KASExtensions.h"
+#import "RACSignal+LabExtensions.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #define EXP_SHORTHAND
 #import "Specta.h"
 #import "Expecta.h"
 
-SpecBegin(RACSignalKASExtensionsSpec)
+SpecBegin(RACSignalLabExtensionsSpec)
 
-describe(@"-kas_replayLastWhen:", ^{
+describe(@"-lab_replayLastWhen:", ^{
 	__block RACSubject *subject;
 	__block RACSubject *cue;
 	__block RACSignal *replayer;
@@ -23,7 +23,7 @@ describe(@"-kas_replayLastWhen:", ^{
 	beforeEach(^{
 		subject = [RACSubject subject];
 		cue = [RACSubject subject];
-		replayer = [subject kas_replayLastWhen:cue];
+		replayer = [subject lab_replayLastWhen:cue];
 	});
 
 	it(@"should send the latest value", ^{
@@ -66,16 +66,15 @@ describe(@"-kas_replayLastWhen:", ^{
 		[subject sendCompleted];
 		expect(completed).to.beTruthy();
 	});
-
 });
 
-describe(@"-kas_combineLatest:", ^{
+describe(@"-lab_combineLatest:", ^{
 	__block RACSubject *subject;
 	__block RACSignal *combined;
 
 	beforeEach(^{
 		subject = [RACSubject subject];
-		combined = [subject kas_combineLatest];
+		combined = [subject lab_combineLatest];
 	});
 
 	it(@"should combine latest from incoming signals", ^{

@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		556C962217ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C962017ECB77C001262B2 /* InfoPlist.strings */; };
 		556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C962D17ECB77C001262B2 /* SenTestingKit.framework */; };
-		556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961417ECB77C001262B2 /* RACNursery.framework */; };
+		556C963217ECB77C001262B2 /* LabRAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961417ECB77C001262B2 /* LabRAC.framework */; };
 		556C963817ECB77C001262B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556C963617ECB77C001262B2 /* InfoPlist.strings */; };
 		556C966517ECBC0E001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
-		556C966917ECBD1C001262B2 /* RACNursery.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* RACNursery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		556C966C17ECBD54001262B2 /* RACSignal+KASExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		556C966D17ECBD54001262B2 /* RACSignal+KASExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */; };
+		556C966917ECBD1C001262B2 /* LabRAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* LabRAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C966C17ECBD54001262B2 /* RACSignal+LabExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+LabExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C966D17ECBD54001262B2 /* RACSignal+LabExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+LabExtensions.m */; };
 		556C96AF17ECC78E001262B2 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96AE17ECC78E001262B2 /* libSpecta.a */; };
-		556C96B217ECC971001262B2 /* RACSignalKASExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */; };
+		556C96B217ECC971001262B2 /* RACSignalLabExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalLabExtensionsSpec.m */; };
 		556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96B617ECCB6B001262B2 /* libExpecta.a */; };
 		556C96BD17ECCF45001262B2 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965A17ECBBED001262B2 /* ReactiveCocoa.framework */; };
 		556C96C617ECD89C001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C961C17ECB77C001262B2 /* Foundation.framework */; };
@@ -25,14 +25,14 @@
 		556C96ED17ECDD41001262B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C962D17ECB77C001262B2 /* SenTestingKit.framework */; };
 		556C96EF17ECDD42001262B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96EE17ECDD41001262B2 /* UIKit.framework */; };
 		556C96F017ECDD42001262B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96DE17ECDD41001262B2 /* Foundation.framework */; };
-		556C96F317ECDD42001262B2 /* libRACNursery-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */; };
-		556C970717ECE08F001262B2 /* RACSignal+KASExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */; };
-		556C970917ECE110001262B2 /* RACSignal+KASExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		556C970A17ECE115001262B2 /* RACNursery.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* RACNursery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C96F317ECDD42001262B2 /* libLabRAC-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C96DD17ECDD41001262B2 /* libLabRAC-iOS.a */; };
+		556C970717ECE08F001262B2 /* RACSignal+LabExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+LabExtensions.m */; };
+		556C970917ECE110001262B2 /* RACSignal+LabExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+LabExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556C970A17ECE115001262B2 /* LabRAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* LabRAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556C970B17ECE135001262B2 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965C17ECBBED001262B2 /* libReactiveCocoa-iOS.a */; };
 		556C970D17ECE206001262B2 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970C17ECE206001262B2 /* libSpecta-iOS.a */; };
 		556C970F17ECE20D001262B2 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970E17ECE20D001262B2 /* libExpecta-iOS.a */; };
-		556C971017ECE221001262B2 /* RACSignalKASExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */; };
+		556C971017ECE221001262B2 /* RACSignalLabExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalLabExtensionsSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 			containerPortal = 556C960B17ECB77C001262B2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 556C961317ECB77C001262B2;
-			remoteInfo = RACNursery;
+			remoteInfo = LabRAC;
 		};
 		556C965917ECBBED001262B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,7 +97,7 @@
 			containerPortal = 556C960B17ECB77C001262B2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 556C96DC17ECDD41001262B2;
-			remoteInfo = "RACNursery iOS";
+			remoteInfo = "LabRAC iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,22 +114,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		556C961417ECB77C001262B2 /* RACNursery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RACNursery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C961417ECB77C001262B2 /* LabRAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LabRAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C961717ECB77C001262B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		556C961A17ECB77C001262B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		556C961B17ECB77C001262B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		556C961C17ECB77C001262B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		556C961F17ECB77C001262B2 /* RACNursery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNursery-Info.plist"; sourceTree = "<group>"; };
+		556C961F17ECB77C001262B2 /* LabRAC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabRAC-Info.plist"; sourceTree = "<group>"; };
 		556C962117ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		556C962317ECB77C001262B2 /* RACNursery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACNursery-Prefix.pch"; sourceTree = "<group>"; };
-		556C962417ECB77C001262B2 /* RACNursery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACNursery.h; sourceTree = "<group>"; };
-		556C962C17ECB77C001262B2 /* RACNurseryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RACNurseryTests.octest; path = "RACNursery Mac Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C962317ECB77C001262B2 /* LabRAC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LabRAC-Prefix.pch"; sourceTree = "<group>"; };
+		556C962417ECB77C001262B2 /* LabRAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabRAC.h; sourceTree = "<group>"; };
+		556C962C17ECB77C001262B2 /* LabRAC Mac Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LabRAC Mac Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C962D17ECB77C001262B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACNurseryTests-Info.plist"; sourceTree = "<group>"; };
+		556C963517ECB77C001262B2 /* LabRACTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabRACTests-Info.plist"; sourceTree = "<group>"; };
 		556C963717ECB77C001262B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
-		556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+KASExtensions.h"; sourceTree = "<group>"; };
-		556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+KASExtensions.m"; sourceTree = "<group>"; };
+		556C966A17ECBD54001262B2 /* RACSignal+LabExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+LabExtensions.h"; sourceTree = "<group>"; };
+		556C966B17ECBD54001262B2 /* RACSignal+LabExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+LabExtensions.m"; sourceTree = "<group>"; };
 		556C969217ECC2CF001262B2 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		556C969417ECC2CF001262B2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		556C969517ECC2CF001262B2 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -147,11 +147,11 @@
 		556C96A417ECC2CF001262B2 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		556C96A517ECC2CF001262B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		556C96AE17ECC78E001262B2 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = ../External/ReactiveCocoa/external/specta/build/Release/libSpecta.a; sourceTree = "<group>"; };
-		556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalKASExtensionsSpec.m; sourceTree = "<group>"; };
+		556C96B117ECC971001262B2 /* RACSignalLabExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalLabExtensionsSpec.m; sourceTree = "<group>"; };
 		556C96B617ECCB6B001262B2 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/ReactiveCocoa/external/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
-		556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRACNursery-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C96DD17ECDD41001262B2 /* libLabRAC-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libLabRAC-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C96DE17ECDD41001262B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		556C96EC17ECDD41001262B2 /* RACNursery iOS Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RACNursery iOS Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C96EC17ECDD41001262B2 /* LabRAC iOS Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LabRAC iOS Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556C96EE17ECDD41001262B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		556C970C17ECE206001262B2 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "../External/ReactiveCocoa/external/specta/build/Release-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
 		556C970E17ECE20D001262B2 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "../External/ReactiveCocoa/external/expecta/build/Release-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				556C96B717ECCB6B001262B2 /* libExpecta.a in Frameworks */,
 				556C96AF17ECC78E001262B2 /* libSpecta.a in Frameworks */,
 				556C962E17ECB77C001262B2 /* SenTestingKit.framework in Frameworks */,
-				556C963217ECB77C001262B2 /* RACNursery.framework in Frameworks */,
+				556C963217ECB77C001262B2 /* LabRAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +198,7 @@
 				556C96ED17ECDD41001262B2 /* SenTestingKit.framework in Frameworks */,
 				556C96EF17ECDD42001262B2 /* UIKit.framework in Frameworks */,
 				556C96F017ECDD42001262B2 /* Foundation.framework in Frameworks */,
-				556C96F317ECDD42001262B2 /* libRACNursery-iOS.a in Frameworks */,
+				556C96F317ECDD42001262B2 /* libLabRAC-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +208,8 @@
 		556C960A17ECB77C001262B2 = {
 			isa = PBXGroup;
 			children = (
-				556C961D17ECB77C001262B2 /* RACNursery */,
-				556C963317ECB77C001262B2 /* RACNurseryTests */,
+				556C961D17ECB77C001262B2 /* LabRAC */,
+				556C963317ECB77C001262B2 /* LabRACTests */,
 				556C961617ECB77C001262B2 /* Frameworks */,
 				556C969017ECC2CF001262B2 /* Configuration */,
 				556C961517ECB77C001262B2 /* Products */,
@@ -220,10 +220,10 @@
 		556C961517ECB77C001262B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				556C961417ECB77C001262B2 /* RACNursery.framework */,
-				556C962C17ECB77C001262B2 /* RACNurseryTests.octest */,
-				556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */,
-				556C96EC17ECDD41001262B2 /* RACNursery iOS Tests.octest */,
+				556C961417ECB77C001262B2 /* LabRAC.framework */,
+				556C962C17ECB77C001262B2 /* LabRAC Mac Tests.octest */,
+				556C96DD17ECDD41001262B2 /* libLabRAC-iOS.a */,
+				556C96EC17ECDD41001262B2 /* LabRAC iOS Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,34 +251,34 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		556C961D17ECB77C001262B2 /* RACNursery */ = {
+		556C961D17ECB77C001262B2 /* LabRAC */ = {
 			isa = PBXGroup;
 			children = (
-				556C962417ECB77C001262B2 /* RACNursery.h */,
-				556C966A17ECBD54001262B2 /* RACSignal+KASExtensions.h */,
-				556C966B17ECBD54001262B2 /* RACSignal+KASExtensions.m */,
+				556C962417ECB77C001262B2 /* LabRAC.h */,
+				556C966A17ECBD54001262B2 /* RACSignal+LabExtensions.h */,
+				556C966B17ECBD54001262B2 /* RACSignal+LabExtensions.m */,
 				556C961E17ECB77C001262B2 /* Supporting Files */,
 			);
-			path = RACNursery;
+			path = LabRAC;
 			sourceTree = "<group>";
 		};
 		556C961E17ECB77C001262B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				556C961F17ECB77C001262B2 /* RACNursery-Info.plist */,
+				556C961F17ECB77C001262B2 /* LabRAC-Info.plist */,
 				556C962017ECB77C001262B2 /* InfoPlist.strings */,
-				556C962317ECB77C001262B2 /* RACNursery-Prefix.pch */,
+				556C962317ECB77C001262B2 /* LabRAC-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		556C963317ECB77C001262B2 /* RACNurseryTests */ = {
+		556C963317ECB77C001262B2 /* LabRACTests */ = {
 			isa = PBXGroup;
 			children = (
-				556C96B117ECC971001262B2 /* RACSignalKASExtensionsSpec.m */,
+				556C96B117ECC971001262B2 /* RACSignalLabExtensionsSpec.m */,
 				556C963417ECB77C001262B2 /* Supporting Files */,
 			);
-			path = RACNurseryTests;
+			path = LabRACTests;
 			sourceTree = "<group>";
 		};
 		556C963417ECB77C001262B2 /* Supporting Files */ = {
@@ -288,7 +288,7 @@
 				556C96AE17ECC78E001262B2 /* libSpecta.a */,
 				556C970E17ECE20D001262B2 /* libExpecta-iOS.a */,
 				556C970C17ECE206001262B2 /* libSpecta-iOS.a */,
-				556C963517ECB77C001262B2 /* RACNurseryTests-Info.plist */,
+				556C963517ECB77C001262B2 /* LabRACTests-Info.plist */,
 				556C963617ECB77C001262B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -378,8 +378,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C966917ECBD1C001262B2 /* RACNursery.h in Headers */,
-				556C966C17ECBD54001262B2 /* RACSignal+KASExtensions.h in Headers */,
+				556C966917ECBD1C001262B2 /* LabRAC.h in Headers */,
+				556C966C17ECBD54001262B2 /* RACSignal+LabExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,17 +387,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C970917ECE110001262B2 /* RACSignal+KASExtensions.h in Headers */,
-				556C970A17ECE115001262B2 /* RACNursery.h in Headers */,
+				556C970917ECE110001262B2 /* RACSignal+LabExtensions.h in Headers */,
+				556C970A17ECE115001262B2 /* LabRAC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		556C961317ECB77C001262B2 /* RACNursery Mac */ = {
+		556C961317ECB77C001262B2 /* LabRAC Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac" */;
+			buildConfigurationList = 556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "LabRAC Mac" */;
 			buildPhases = (
 				556C960F17ECB77C001262B2 /* Sources */,
 				556C961017ECB77C001262B2 /* Frameworks */,
@@ -409,14 +409,14 @@
 			dependencies = (
 				556C966817ECBCB0001262B2 /* PBXTargetDependency */,
 			);
-			name = "RACNursery Mac";
-			productName = RACNursery;
-			productReference = 556C961417ECB77C001262B2 /* RACNursery.framework */;
+			name = "LabRAC Mac";
+			productName = LabRAC;
+			productReference = 556C961417ECB77C001262B2 /* LabRAC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		556C962B17ECB77C001262B2 /* RACNursery Mac Tests */ = {
+		556C962B17ECB77C001262B2 /* LabRAC Mac Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac Tests" */;
+			buildConfigurationList = 556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "LabRAC Mac Tests" */;
 			buildPhases = (
 				556C962717ECB77C001262B2 /* Sources */,
 				556C962817ECB77C001262B2 /* Frameworks */,
@@ -428,14 +428,14 @@
 			dependencies = (
 				556C963117ECB77C001262B2 /* PBXTargetDependency */,
 			);
-			name = "RACNursery Mac Tests";
-			productName = RACNurseryTests;
-			productReference = 556C962C17ECB77C001262B2 /* RACNurseryTests.octest */;
+			name = "LabRAC Mac Tests";
+			productName = LabRACTests;
+			productReference = 556C962C17ECB77C001262B2 /* LabRAC Mac Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		556C96DC17ECDD41001262B2 /* RACNursery iOS */ = {
+		556C96DC17ECDD41001262B2 /* LabRAC iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556C96FD17ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS" */;
+			buildConfigurationList = 556C96FD17ECDD42001262B2 /* Build configuration list for PBXNativeTarget "LabRAC iOS" */;
 			buildPhases = (
 				556C96D917ECDD41001262B2 /* Sources */,
 				556C96DA17ECDD41001262B2 /* Frameworks */,
@@ -446,14 +446,14 @@
 			);
 			dependencies = (
 			);
-			name = "RACNursery iOS";
-			productName = "RACNursery iOS";
-			productReference = 556C96DD17ECDD41001262B2 /* libRACNursery-iOS.a */;
+			name = "LabRAC iOS";
+			productName = "LabRAC iOS";
+			productReference = 556C96DD17ECDD41001262B2 /* libLabRAC-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		556C96EB17ECDD41001262B2 /* RACNursery iOS Tests */ = {
+		556C96EB17ECDD41001262B2 /* LabRAC iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS Tests" */;
+			buildConfigurationList = 556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "LabRAC iOS Tests" */;
 			buildPhases = (
 				556C96E717ECDD41001262B2 /* Sources */,
 				556C96E817ECDD41001262B2 /* Frameworks */,
@@ -465,9 +465,9 @@
 			dependencies = (
 				556C96F217ECDD42001262B2 /* PBXTargetDependency */,
 			);
-			name = "RACNursery iOS Tests";
-			productName = "RACNursery iOSTests";
-			productReference = 556C96EC17ECDD41001262B2 /* RACNursery iOS Tests.octest */;
+			name = "LabRAC iOS Tests";
+			productName = "LabRAC iOSTests";
+			productReference = 556C96EC17ECDD41001262B2 /* LabRAC iOS Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -479,7 +479,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Dave Lee";
 			};
-			buildConfigurationList = 556C960E17ECB77C001262B2 /* Build configuration list for PBXProject "RACNursery" */;
+			buildConfigurationList = 556C960E17ECB77C001262B2 /* Build configuration list for PBXProject "LabRAC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -497,10 +497,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				556C961317ECB77C001262B2 /* RACNursery Mac */,
-				556C962B17ECB77C001262B2 /* RACNursery Mac Tests */,
-				556C96DC17ECDD41001262B2 /* RACNursery iOS */,
-				556C96EB17ECDD41001262B2 /* RACNursery iOS Tests */,
+				556C961317ECB77C001262B2 /* LabRAC Mac */,
+				556C962B17ECB77C001262B2 /* LabRAC Mac Tests */,
+				556C96DC17ECDD41001262B2 /* LabRAC iOS */,
+				556C96EB17ECDD41001262B2 /* LabRAC iOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -610,7 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C966D17ECBD54001262B2 /* RACSignal+KASExtensions.m in Sources */,
+				556C966D17ECBD54001262B2 /* RACSignal+LabExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C96B217ECC971001262B2 /* RACSignalKASExtensionsSpec.m in Sources */,
+				556C96B217ECC971001262B2 /* RACSignalLabExtensionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C970717ECE08F001262B2 /* RACSignal+KASExtensions.m in Sources */,
+				556C970717ECE08F001262B2 /* RACSignal+LabExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,7 +634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C971017ECE221001262B2 /* RACSignalKASExtensionsSpec.m in Sources */,
+				556C971017ECE221001262B2 /* RACSignalLabExtensionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +643,7 @@
 /* Begin PBXTargetDependency section */
 		556C963117ECB77C001262B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 556C961317ECB77C001262B2 /* RACNursery Mac */;
+			target = 556C961317ECB77C001262B2 /* LabRAC Mac */;
 			targetProxy = 556C963017ECB77C001262B2 /* PBXContainerItemProxy */;
 		};
 		556C966817ECBCB0001262B2 /* PBXTargetDependency */ = {
@@ -653,7 +653,7 @@
 		};
 		556C96F217ECDD42001262B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 556C96DC17ECDD41001262B2 /* RACNursery iOS */;
+			target = 556C96DC17ECDD41001262B2 /* LabRAC iOS */;
 			targetProxy = 556C96F117ECDD42001262B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -697,7 +697,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				GCC_PREFIX_HEADER = "LabRAC/LabRAC-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -732,7 +732,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				GCC_PREFIX_HEADER = "LabRAC/LabRAC-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -751,8 +751,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				INFOPLIST_FILE = "LabRAC/LabRAC-Info.plist";
+				PRODUCT_NAME = LabRAC;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -765,8 +765,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				INFOPLIST_FILE = "LabRAC/LabRAC-Info.plist";
+				PRODUCT_NAME = LabRAC;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -781,9 +781,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC Mac Tests";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -798,9 +798,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC Mac Tests";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -824,7 +824,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				GCC_PREFIX_HEADER = "LabRAC/LabRAC-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -849,8 +849,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				INFOPLIST_FILE = "LabRAC/LabRAC-Info.plist";
+				PRODUCT_NAME = LabRAC;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Test;
@@ -865,9 +865,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC Mac Tests";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Test;
@@ -891,7 +891,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "RACNursery/RACNursery-Prefix.pch";
+				GCC_PREFIX_HEADER = "LabRAC/LabRAC-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -916,8 +916,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "RACNursery/RACNursery-Info.plist";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				INFOPLIST_FILE = "LabRAC/LabRAC-Info.plist";
+				PRODUCT_NAME = LabRAC;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Profile;
@@ -932,9 +932,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC Mac Tests";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Profile;
@@ -943,9 +943,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/RACNursery_iOS.dst;
-				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
-				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				DSTROOT = /tmp/LabRAC_iOS.dst;
+				PRODUCT_NAME = "LabRAC-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -955,9 +955,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/RACNursery_iOS.dst;
-				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
-				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				DSTROOT = /tmp/LabRAC_iOS.dst;
+				PRODUCT_NAME = "LabRAC-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -968,9 +968,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/RACNursery_iOS.dst;
-				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
-				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				DSTROOT = /tmp/LabRAC_iOS.dst;
+				PRODUCT_NAME = "LabRAC-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -981,9 +981,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/RACNursery_iOS.dst;
-				PRODUCT_NAME = "$(PROJECT_NAME)-iOS";
-				PUBLIC_HEADERS_FOLDER_PATH = include/RACNursery;
+				DSTROOT = /tmp/LabRAC_iOS.dst;
+				PRODUCT_NAME = "LabRAC-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -1003,9 +1003,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC iOS Tests";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1024,9 +1024,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC iOS Tests";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
@@ -1046,9 +1046,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC iOS Tests";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
@@ -1068,9 +1068,9 @@
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\"",
 					"\"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**",
 				);
-				INFOPLIST_FILE = "RACNurseryTests/RACNurseryTests-Info.plist";
+				INFOPLIST_FILE = "LabRACTests/LabRACTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "LabRAC iOS Tests";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
@@ -1080,7 +1080,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		556C960E17ECB77C001262B2 /* Build configuration list for PBXProject "RACNursery" */ = {
+		556C960E17ECB77C001262B2 /* Build configuration list for PBXProject "LabRAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C963C17ECB77C001262B2 /* Debug */,
@@ -1091,7 +1091,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac" */ = {
+		556C963E17ECB77C001262B2 /* Build configuration list for PBXNativeTarget "LabRAC Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C963F17ECB77C001262B2 /* Debug */,
@@ -1102,7 +1102,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "RACNursery Mac Tests" */ = {
+		556C964117ECB77C001262B2 /* Build configuration list for PBXNativeTarget "LabRAC Mac Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C964217ECB77C001262B2 /* Debug */,
@@ -1113,7 +1113,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556C96FD17ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS" */ = {
+		556C96FD17ECDD42001262B2 /* Build configuration list for PBXNativeTarget "LabRAC iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C96FE17ECDD42001262B2 /* Debug */,
@@ -1124,7 +1124,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "RACNursery iOS Tests" */ = {
+		556C970217ECDD42001262B2 /* Build configuration list for PBXNativeTarget "LabRAC iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556C970317ECDD42001262B2 /* Debug */,

@@ -1,16 +1,16 @@
 //
-//  RACSignal+KASExtensions.m
-//  RACNursery
+//  RACSignal+LabExtensions.m
+//  LabRAC
 //
 //  Created by Dave Lee on 2013-09-20.
 //  Copyright (c) 2013 Dave Lee. All rights reserved.
 //
 
-#import "RACSignal+KASExtensions.h"
+#import "RACSignal+LabExtensions.h"
 
-@implementation RACSignal (KASExtensions)
+@implementation RACSignal (LabExtensions)
 
-- (RACSignal *)kas_replayLastWhen:(RACSignal *)cue {
+- (RACSignal *)lab_replayLastWhen:(RACSignal *)cue {
 	NSCParameterAssert(cue != nil);
 
 	return [[RACSignal
@@ -28,10 +28,10 @@
 				[connectionDisposable dispose];
 			}];
 		}]
-		setNameWithFormat:@"[%@] -kas_replayLastWhen: %@", self.name, cue.name];
+		setNameWithFormat:@"[%@] -lab_replayLastWhen: %@", self.name, cue.name];
 }
 
-- (RACSignal *)kas_combineLatest {
+- (RACSignal *)lab_combineLatest {
 	return [[[self
 		scanWithStart:[RACSignal return:[RACTuple new]] reduce:^(RACSignal *running, RACSignal *next) {
 			return [[[running
@@ -42,7 +42,7 @@
 				replayLast];
 		}]
 		switchToLatest]
-		setNameWithFormat:@"%@ -kas_combineLatest", self.name];
+		setNameWithFormat:@"%@ -lab_combineLatest", self.name];
 }
 
 @end
