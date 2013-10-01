@@ -38,4 +38,8 @@
 /// used to inject side effects into the signal.
 - (RACSignal *)lab_doFirst:(void (^)(id x))block;
 
+/// Call the given block after the last `next`, immediately prior to error or
+/// completion. This should be used to inject side effects into the signal.
+- (RACSignal *)lab_doLast:(void (^)(id x))block;
+
 @end

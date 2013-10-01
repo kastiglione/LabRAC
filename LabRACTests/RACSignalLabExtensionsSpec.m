@@ -132,4 +132,51 @@ describe(@"-lab_doFirst:", ^{
 	});
 });
 
+describe(@"-lab_doLast:", ^{
+	__block RACSubject *subject;
+	__block BOOL blockCalled;
+	__block id lastValue;
+
+	beforeEach(^{
+		subject = [RACSubject subject];
+		blockCalled = NO;
+		lastValue = nil;
+
+		[[[subject
+			lab_doLast:^(id x) {
+				blockCalled = YES;
+				lastValue = x;
+			}]
+			publish]
+			connect];
+	});
+
+	it(@"should not call block for empty signals", ^{
+		[subject sendCompleted];
+		expect(blockCalled).to.beFalsy();
+	});
+
+	it(@"should call block for last value before completion", ^{
+		[subject sendNext:@1];
+		expect(blockCalled).to.beFalsy();
+
+		[subject sendNext:@2];
+		expect(blockCalled).to.beFalsy();
+
+		[subject sendCompleted];
+		expect(lastValue).to.equal(@2);
+	});
+
+	it(@"should call block for last value before error", ^{
+		[subject sendNext:@1];
+		expect(blockCalled).to.beFalsy();
+
+		[subject sendNext:@2];
+		expect(blockCalled).to.beFalsy();
+
+		[subject sendError:[NSError new]];
+		expect(lastValue).to.equal(@2);
+	});
+});
+
 SpecEnd

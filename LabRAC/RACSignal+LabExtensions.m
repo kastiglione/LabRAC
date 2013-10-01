@@ -66,4 +66,32 @@
 		setNameWithFormat:@"[%@] -lab_doFirst:", self.name];
 }
 
+- (RACSignal *)lab_doLast:(void (^)(id x))block {
+	return [[RACSignal
+		createSignal:^(id<RACSubscriber> subscriber) {
+			__block BOOL pending = NO;
+			__block id last = nil;
+
+			return [self subscribeNext:^(id x) {
+				last = x;
+				pending = YES;
+
+				[subscriber sendNext:x];
+			} error:^(NSError *error) {
+				if (pending) {
+					block(last);
+				}
+
+				[subscriber sendError:error];
+			} completed:^{
+				if (pending) {
+					block(last);
+				}
+
+				[subscriber sendCompleted];
+			}];
+		}]
+		setNameWithFormat:@"[%@] -lab_doLast:", self.name];
+}
+
 @end
