@@ -34,4 +34,8 @@
 /// `error` events, and completes when sent signals complete.
 - (RACSignal *)lab_combineLatest;
 
+/// Call the given block immediately prior to the first `next`. This should be
+/// used to inject side effects into the signal.
+- (RACSignal *)lab_doFirst:(void (^)(id x))block;
+
 @end
