@@ -78,9 +78,9 @@ describe(@"-lab_combineLatest:", ^{
 	});
 
 	it(@"should combine latest from incoming signals", ^{
-		__block RACTuple *latest;
-		[combined subscribeNext:^(RACTuple *tuple) {
-			latest = tuple;
+		__block NSArray *latest;
+		[combined subscribeNext:^(NSArray *x) {
+			latest = x;
 		}];
 		expect(latest).to.equal(nil);
 
@@ -89,13 +89,13 @@ describe(@"-lab_combineLatest:", ^{
 		expect(latest).to.equal(nil);
 
 		[first sendNext:@1];
-		expect(latest).to.equal(RACTuplePack(@1));
+		expect(latest).to.equal(@[ @1 ]);
 
 		[first sendNext:@2];
-		expect(latest).to.equal(RACTuplePack(@2));
+		expect(latest).to.equal(@[ @2 ]);
 
 		[subject sendNext:[RACSignal return:@3]];
-		expect(latest).to.equal(RACTuplePack(@2, @3));
+		expect(latest).to.equal((@[ @2, @3 ]));
 	});
 });
 

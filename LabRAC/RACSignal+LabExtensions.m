@@ -33,11 +33,11 @@
 
 - (RACSignal *)lab_combineLatest {
 	return [[[self
-		scanWithStart:[RACSignal return:[RACTuple new]] reduce:^(RACSignal *running, RACSignal *next) {
+		scanWithStart:[RACSignal return:@[]] reduce:^(RACSignal *running, RACSignal *next) {
 			return [[[running
 				combineLatestWith:next]
-				reduceEach:^(RACTuple *combined, id value) {
-					return [combined tupleByAddingObject:value];
+				reduceEach:^(NSArray *combined, id value) {
+					return [combined arrayByAddingObject:value];
 				}]
 				replayLast];
 		}]
