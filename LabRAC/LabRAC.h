@@ -6,3 +6,4 @@
 //  Copyright (c) 2013 Dave Lee. All rights reserved.
 //
 
+#import <LabRAC/RACSignal+LabExtensions.h>

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Dave Lee. All rights reserved.
 //
 
-#import "RACSignal+LabExtensions.h"
+#import "LabRAC.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #define EXP_SHORTHAND
