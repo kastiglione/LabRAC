@@ -155,6 +155,7 @@
 		556C96EE17ECDD41001262B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		556C970C17ECE206001262B2 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "../External/ReactiveCocoa/external/specta/build/Release-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
 		556C970E17ECE20D001262B2 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "../External/ReactiveCocoa/external/expecta/build/Release-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
+		557B9C6017FFA3B70013838A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +209,7 @@
 		556C960A17ECB77C001262B2 = {
 			isa = PBXGroup;
 			children = (
+				557B9C6017FFA3B70013838A /* README.md */,
 				556C961D17ECB77C001262B2 /* LabRAC */,
 				556C963317ECB77C001262B2 /* LabRACTests */,
 				556C961617ECB77C001262B2 /* Frameworks */,
