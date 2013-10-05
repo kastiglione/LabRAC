@@ -42,4 +42,7 @@
 /// completion. This should be used to inject side effects into the signal.
 - (RACSignal *)lab_doLast:(void (^)(id x))block;
 
+/// Execute the given block immediately following subscription of the receiver.
+- (RACSignal *)lab_didSubscribe:(void (^)(void))block;
+
 @end

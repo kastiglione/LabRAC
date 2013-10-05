@@ -94,4 +94,17 @@
 		setNameWithFormat:@"[%@] -lab_doLast:", self.name];
 }
 
+- (RACSignal *)lab_didSubscribe:(void (^)(void))block {
+	NSCParameterAssert(block != NULL);
+
+	return [[RACSignal
+		createSignal:^ RACDisposable * (id<RACSubscriber> subscriber) {
+			// First connect the subscriber, then perform the side effects.
+			[self subscribe:subscriber];
+			block();
+			return nil;
+		}]
+		setNameWithFormat:@"[%@] -lab_didSubscribe:", self.name];
+}
+
 @end

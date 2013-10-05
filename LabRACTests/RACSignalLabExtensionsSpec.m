@@ -179,4 +179,19 @@ describe(@"-lab_doLast:", ^{
 	});
 });
 
+describe(@"-lab_didSubscribe:", ^{
+	it(@"should perform side effects after subscription", ^{
+		__block BOOL hasSubscribed = NO;
+		RACSignal *signal = [RACSignal createSignal:^ RACDisposable * (id<RACSubscriber> subscriber) {
+			hasSubscribed = YES;
+			return nil;
+		}];
+
+		expect(hasSubscribed).to.beFalsy();
+		[signal lab_didSubscribe:^{
+			expect(hasSubscribed).to.beTruthy();
+		}];
+	});
+});
+
 SpecEnd
