@@ -94,6 +94,16 @@
 		setNameWithFormat:@"[%@] -lab_doLast:", self.name];
 }
 
+- (RACSignal *)lab_willSubscribe:(void (^)(void))block {
+	return [[RACSignal
+		defer:^{
+			// First perform the side effects, then continue subscription.
+			block();
+			return self;
+		}]
+		setNameWithFormat:@"[%@] -lab_didSubscribe:", self.name];
+}
+
 - (RACSignal *)lab_didSubscribe:(void (^)(void))block {
 	NSCParameterAssert(block != NULL);
 
