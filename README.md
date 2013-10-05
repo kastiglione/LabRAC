@@ -1,6 +1,6 @@
 ## LabRAC
 
-Experimental ReactiveCocoa signal operations. They've been used in an app, and
+Exploratory ReactiveCocoa signal operations. They've been used in an app, and
 do have tests, but judge for yourself.
 
 ### Operations
