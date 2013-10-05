@@ -9,6 +9,8 @@ do have tests, but judge for yourself.
 * `-lab_combineLatest`
 * `-lab_doFirst:`
 * `-lab_doLast:`
+* `-lab_willSubscribe:`
+* `-lab_didSubscribe:`
 
 ##### `-lab_replayLastWhen:(RACSignal *)cue`
 
@@ -29,3 +31,11 @@ resulting signal sends values of `NSArray`, not `RACTuple`.
 
 Similar to `-initially:` and `-finally:`, except the side effects represented by
 these operators will only happen if the signal sends values.
+
+##### `-lab_willSubscribe:(void (^)(void))block`
+##### `-lab_didSubscribe:(void (^)(void))block`
+
+Returns a signal that performs subscription side effects. While
+`-lab_willSubscribe:` is identical to `-initially:` and exists just for symmetry,
+`-lab_didSubscribe:` allows a signal composition to include post-subscription
+side effects.
