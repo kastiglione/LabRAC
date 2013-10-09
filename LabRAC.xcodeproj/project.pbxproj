@@ -327,7 +327,7 @@
 			);
 			name = Configuration;
 			path = External/ReactiveCocoa/external/xcconfigs;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		556C969117ECC2CF001262B2 /* Base */ = {
 			isa = PBXGroup;
