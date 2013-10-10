@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Dave Lee. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 @interface RACSignal (LabExtensions)
 
 /// Passes through all `next` values from the reciever. In addition, the most
