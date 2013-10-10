@@ -29,7 +29,6 @@
 		556C970717ECE08F001262B2 /* RACSignal+LabExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C966B17ECBD54001262B2 /* RACSignal+LabExtensions.m */; };
 		556C970917ECE110001262B2 /* RACSignal+LabExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C966A17ECBD54001262B2 /* RACSignal+LabExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556C970A17ECE115001262B2 /* LabRAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 556C962417ECB77C001262B2 /* LabRAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		556C970B17ECE135001262B2 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965C17ECBBED001262B2 /* libReactiveCocoa-iOS.a */; };
 		556C970D17ECE206001262B2 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970C17ECE206001262B2 /* libSpecta-iOS.a */; };
 		556C970F17ECE20D001262B2 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970E17ECE20D001262B2 /* libExpecta-iOS.a */; };
 		556C971017ECE221001262B2 /* RACSignalLabExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalLabExtensionsSpec.m */; };
@@ -192,7 +191,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C970B17ECE135001262B2 /* libReactiveCocoa-iOS.a in Frameworks */,
 				556C96DF17ECDD41001262B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
