@@ -105,6 +105,13 @@
 			remoteGlobalIDString = D05AD39417F2D56F0080895B;
 			remoteInfo = "ReactiveCocoa-Mac";
 		};
+		55F19724180750480086EA00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556C964E17ECBBEC001262B2 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F440AA153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -453,6 +460,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				55F19725180750480086EA00 /* PBXTargetDependency */,
 			);
 			name = "LabRAC iOS";
 			productName = "LabRAC iOS";
@@ -670,6 +678,11 @@
 			isa = PBXTargetDependency;
 			target = 556C96DC17ECDD41001262B2 /* LabRAC iOS */;
 			targetProxy = 556C96F117ECDD42001262B2 /* PBXContainerItemProxy */;
+		};
+		55F19725180750480086EA00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = 55F19724180750480086EA00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
