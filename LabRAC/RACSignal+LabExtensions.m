@@ -15,17 +15,17 @@
 
 	return [[RACSignal
 		createSignal:^(id<RACSubscriber> subscriber) {
-			RACMulticastConnection *connection = [self publish];
+			RACSubject *subject = [RACSubject subject];
 
 			RACDisposable *mergeDisposable = [[RACSignal
-				merge:@[ connection.signal, [connection.signal sample:cue] ]]
+				merge:@[ subject, [subject sample:cue] ]]
 				subscribe:subscriber];
 
-			RACDisposable *connectionDisposable = [connection connect];
+			RACDisposable *selfDisposable = [self subscribe:subject];
 
 			return [RACDisposable disposableWithBlock:^{
 				[mergeDisposable dispose];
-				[connectionDisposable dispose];
+				[selfDisposable dispose];
 			}];
 		}]
 		setNameWithFormat:@"[%@] -lab_replayLastWhen: %@", self.name, cue.name];
