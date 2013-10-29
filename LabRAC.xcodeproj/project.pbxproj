@@ -32,6 +32,7 @@
 		556C970D17ECE206001262B2 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970C17ECE206001262B2 /* libSpecta-iOS.a */; };
 		556C970F17ECE20D001262B2 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C970E17ECE20D001262B2 /* libExpecta-iOS.a */; };
 		556C971017ECE221001262B2 /* RACSignalLabExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C96B117ECC971001262B2 /* RACSignalLabExtensionsSpec.m */; };
+		559934AD181F62B90072FED8 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C965C17ECBBED001262B2 /* libReactiveCocoa-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559934AD181F62B90072FED8 /* libReactiveCocoa-iOS.a in Frameworks */,
 				556C970F17ECE20D001262B2 /* libExpecta-iOS.a in Frameworks */,
 				556C970D17ECE206001262B2 /* libSpecta-iOS.a in Frameworks */,
 				556C96ED17ECDD41001262B2 /* SenTestingKit.framework in Frameworks */,
