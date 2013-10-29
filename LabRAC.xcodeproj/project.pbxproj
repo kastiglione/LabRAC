@@ -883,6 +883,10 @@
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/LabRAC_iOS.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"$(PROJECT_DIR)/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/**",
+				);
 				PRODUCT_NAME = "LabRAC-iOS";
 				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 			};
@@ -893,6 +897,10 @@
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/LabRAC_iOS.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"$(PROJECT_DIR)/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/**",
+				);
 				PRODUCT_NAME = "LabRAC-iOS";
 				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 				VALIDATE_PRODUCT = YES;
@@ -904,6 +912,10 @@
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/LabRAC_iOS.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"$(PROJECT_DIR)/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/**",
+				);
 				PRODUCT_NAME = "LabRAC-iOS";
 				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 			};
@@ -914,6 +926,10 @@
 			baseConfigurationReference = 556C969E17ECC2CF001262B2 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/LabRAC_iOS.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(OBJROOT)/UninstalledProducts/include",
+					"$(PROJECT_DIR)/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/**",
+				);
 				PRODUCT_NAME = "LabRAC-iOS";
 				PUBLIC_HEADERS_FOLDER_PATH = include/LabRAC;
 			};
