@@ -95,11 +95,13 @@
 }
 
 - (RACSignal *)lab_willSubscribe:(void (^)(void))block {
+	NSCParameterAssert(block != NULL);
+
 	return [[RACSignal
-		defer:^{
-			// First perform the side effects, then continue subscription.
+		createSignal:^(id<RACSubscriber> subscriber) {
+			// Perform side effects, then subscribe.
 			block();
-			return self;
+			return [self subscribe:subscriber];
 		}]
 		setNameWithFormat:@"[%@] -lab_didSubscribe:", self.name];
 }
@@ -108,11 +110,11 @@
 	NSCParameterAssert(block != NULL);
 
 	return [[RACSignal
-		createSignal:^ RACDisposable * (id<RACSubscriber> subscriber) {
-			// First connect the subscriber, then perform the side effects.
-			[self subscribe:subscriber];
+		createSignal:^(id<RACSubscriber> subscriber) {
+			// Subscribe, then perform side effects.
+			RACDisposable *disposable = [self subscribe:subscriber];
 			block();
-			return nil;
+			return disposable;
 		}]
 		setNameWithFormat:@"[%@] -lab_didSubscribe:", self.name];
 }
